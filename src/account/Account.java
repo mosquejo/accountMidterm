@@ -64,5 +64,9 @@ public class Account {
         return user;
     }
     
+    public double getBalanceAfterInterest() {
+        return (getBalance() + getBalance()*getInterestRate());
+    }
+    
     
 }//class end
